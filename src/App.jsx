@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://news-app-ciz1.onrender.com";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -108,6 +108,10 @@ function App() {
         <section className="hero">
           <p className="subtitle">GÜNDEMİ TAKİP ET</p>
           <h1>Son Haberler</h1>
+          <p className="current-category">
+  Şu an gösterilen kategori:{" "}
+  <strong>{categoryNames[category]}</strong>
+</p>
           <p>
             Güncel haberleri kategorilere göre keşfet, ara ve detaylarını
             incele.
